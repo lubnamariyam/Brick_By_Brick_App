@@ -1,4 +1,4 @@
-package com.lubnamariyam.webviewandroiddeelopersapp.ui.theme
+package com.lubnamariyam.brickbybrick.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

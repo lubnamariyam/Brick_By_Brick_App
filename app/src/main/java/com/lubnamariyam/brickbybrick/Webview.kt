@@ -1,11 +1,16 @@
-package com.lubnamariyam.webviewandroiddeelopersapp
+package com.lubnamariyam.brickbybrick
 
+import android.annotation.SuppressLint
+import android.os.Build
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.annotation.RequiresApi
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.viewinterop.AndroidView
 
+@SuppressLint("SetJavaScriptEnabled")
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun webPage(url:String){
     AndroidView(factory = {
@@ -19,6 +24,8 @@ fun webPage(url:String){
         }
     }, update = {
         it.loadUrl(url)
+        it.isFocusableInTouchMode = true
+        it.settings.javaScriptEnabled = true
     })
 }
 

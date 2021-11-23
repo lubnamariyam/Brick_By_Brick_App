@@ -1,4 +1,4 @@
-package com.lubnamariyam.webviewandroiddeelopersapp
+package com.lubnamariyam.brickbybrick
 
 import org.junit.Test
 
